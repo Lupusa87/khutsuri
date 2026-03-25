@@ -8,16 +8,9 @@
     <meta name="author" content="Vakhtangi Abashidze ვახტანგი აბაშიძე ვახტანგ აბაშიძე ვახო აბაშიძე">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>ხუცური</title>
-    <base href="/" />
+    <base href="/khutsuri/" />
     <script>
         (function () {
-            var baseElement = document.querySelector("base");
-            if (window.location.hostname.endsWith(".github.io")) {
-                var segments = window.location.pathname.split("/").filter(Boolean);
-                var basePath = segments.length > 0 ? "/" + segments[0] + "/" : "/";
-                baseElement.setAttribute("href", basePath);
-            }
-
             var redirectPath = sessionStorage.getItem("gh-pages-redirect");
             if (!redirectPath) {
                 return;
