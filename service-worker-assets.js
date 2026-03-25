@@ -1,6 +1,14 @@
 self.assetsManifest = {
-  "version": "1+gyO9Eb",
+  "version": "szBKO+hy",
   "assets": [
+    {
+      "hash": "sha256-AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=",
+      "url": ".nojekyll"
+    },
+    {
+      "hash": "sha256-+F9dhy69q7miT1T5WkHtLImJtXRAxShNcxJ5r0J4GQc=",
+      "url": "404.html"
+    },
     {
       "hash": "sha256-Mi87nP4ChM3nZWOvy5rJUEwaoipP580AjB5HTgg2jjI=",
       "url": "BlazorOldGeorgianScripts.styles.css"
@@ -30,52 +38,52 @@ self.assetsManifest = {
       "url": "_content/BlazorWindowHelper/BWHJsInterop.js"
     },
     {
-      "hash": "sha256-PPKYwnYU7xGoqchguUKxyONC/HTQjh4Xz5VbF1Qt4yk=",
-      "url": "_framework/BlazorCSS.cynu1mcn9u.wasm"
+      "hash": "sha256-O1XAEmE6/FM8ji0fhZ7FflEYNXI0xHYl18egrHOHThY=",
+      "url": "_framework/BlazorCSS.v37d0kudxl.wasm"
     },
     {
-      "hash": "sha256-VW0RvkueDqtylmckuCXSlfv9tNX+sGw5AjVLDVWYl8k=",
-      "url": "_framework/BlazorCanvasHelper.xtywt6eomp.wasm"
+      "hash": "sha256-QImcLPs91rnqqT5UbUMC12zb9wEsMVQJeMQx13kbZOc=",
+      "url": "_framework/BlazorCanvasHelper.8a1dvkmyvz.wasm"
     },
     {
-      "hash": "sha256-Bj/7kb9WnshP8AG0Kfb03cd7F1Jpc6QRD/4K5V3w/tA=",
-      "url": "_framework/BlazorContextMenu.6wkhfjikoo.wasm"
+      "hash": "sha256-UBpKXIXwco6kWTWB0XA0HVAHbDNNgGHfHQ3lPeEZ6HA=",
+      "url": "_framework/BlazorContextMenu.gcn2z0s5yd.wasm"
     },
     {
-      "hash": "sha256-Pp0JfdC7Bzi+hXh15uAuGyZNmF7pBDGLCi879bSwscg=",
-      "url": "_framework/BlazorCounterHelper.2clr2zhc0g.wasm"
+      "hash": "sha256-UvlOSQrQg1bo+ZD3oxlw5A8yJuKzkWD9KI4rEWPmKXk=",
+      "url": "_framework/BlazorCounterHelper.addgfohmo9.wasm"
     },
     {
-      "hash": "sha256-d9dj8/1HoV8Sx6D22pLWX7bvTcewN5vKW6IIihvVnv4=",
-      "url": "_framework/BlazorHWLib.nokr6c4erq.wasm"
+      "hash": "sha256-NHoU2QIN8aw79izv5A6gNHPxiexTsNShAC4I30P5oOc=",
+      "url": "_framework/BlazorHWLib.gtp6iwij4f.wasm"
     },
     {
-      "hash": "sha256-bjIR92JEzhHiqDRpa44wvDG/98oKk0jLzfu81WtYzgU=",
-      "url": "_framework/BlazorOldGeoScriptLib.ulo0tlmtjr.wasm"
+      "hash": "sha256-ELopn2DKC+HjYZHEzImNxjjh4ExVZ7ZdQWkgHJs7ERI=",
+      "url": "_framework/BlazorOldGeoScriptLib.wozx38t9vy.wasm"
     },
     {
-      "hash": "sha256-4zx3dVX/c/7Ir44O/kLZsHQyyw+/NfawCZl7WSbh8IU=",
-      "url": "_framework/BlazorOldGeorgianScripts.le5rb9ol3x.wasm"
+      "hash": "sha256-tMpMceXxqZb8Kf4DR9VisESIWU3U2ck8tsfJfuvMzWs=",
+      "url": "_framework/BlazorOldGeorgianScripts.0zyhmle5x6.wasm"
     },
     {
-      "hash": "sha256-lUD65ITpAKYhVbw9tT7LyhMWOY1gLDARaeH78SIQUtM=",
-      "url": "_framework/BlazorShared.11j12a8csj.wasm"
+      "hash": "sha256-WC4HMldgznT6d80QVGbNnZ9MIlQYKlvVCvqUUDD8dv8=",
+      "url": "_framework/BlazorShared.oojkx89z99.wasm"
     },
     {
-      "hash": "sha256-sSDj6RJDn1r8AqOt3X2oOCwn5UXvJfp8YWSRQMGLVNY=",
-      "url": "_framework/BlazorSoundsLib.r9jvcsb50j.wasm"
+      "hash": "sha256-c+b/z5pZvK9SiDUiAXlOM2FXl6HrjArAHuTVuglU/hw=",
+      "url": "_framework/BlazorSoundsLib.v9xowmjv8g.wasm"
     },
     {
-      "hash": "sha256-OW6fXqOwLpGkg45PBrDkbHyr0W/1P28M7pVLNufkKKA=",
-      "url": "_framework/BlazorSvgHelper.3x6bacevki.wasm"
+      "hash": "sha256-yqzNl81o8Ssf956wXigFojOFSFW7YMu1LZfwpU2DSfM=",
+      "url": "_framework/BlazorSvgHelper.a47799yos4.wasm"
     },
     {
-      "hash": "sha256-5HR7sy1MDfU81iBtapKZD8CpESMRivePuiyRBI3kVa8=",
-      "url": "_framework/BlazorTreeVisualizerComponent.wldk7n1f00.wasm"
+      "hash": "sha256-KL5kDkcU0WDYumuBSMR5J9wt+QcUPY5lkGDpos0LIjw=",
+      "url": "_framework/BlazorTreeVisualizerComponent.8wxd1x90xg.wasm"
     },
     {
-      "hash": "sha256-OBc4/0Oe5Jrg/aSAa0dZg8yfKj867JsoQ/ch2EKdVD4=",
-      "url": "_framework/BlazorWindowHelper.s3wd9r9q2r.wasm"
+      "hash": "sha256-JvhJRbIsmsZZAs5gVRUbH6xPO/u4DeybouTHyt3sdzE=",
+      "url": "_framework/BlazorWindowHelper.e6kokq0teu.wasm"
     },
     {
       "hash": "sha256-B6YXXv3mpZe9YTx/CoTfbFUn4kDYcsu3zHFHAy5fdjE=",
@@ -338,7 +346,7 @@ self.assetsManifest = {
       "url": "_framework/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-EW1asSwWRrg029/R1LzMlRExkdPfgrOahOryZ7rHguA=",
+      "hash": "sha256-CCYr+nOHaXxSeWI1lcHIcdE4g4f1yXjCXv8SXgshs8k=",
       "url": "_framework/dotnet.js"
     },
     {
@@ -714,7 +722,7 @@ self.assetsManifest = {
       "url": "icons/youtube.png"
     },
     {
-      "hash": "sha256-TpovPl1+Wu5wNqnrLc7cXH1HI9Hmc22Qr2SGZz8HudQ=",
+      "hash": "sha256-r9djED5KA7n9NrdkGD7CRDX44kRTIl2pG5Kol+vL3VE=",
       "url": "index.html"
     },
     {
