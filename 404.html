@@ -6,9 +6,15 @@
     <title>Redirecting...</title>
     <script>
         (function () {
+            var segments = window.location.pathname.split("/").filter(Boolean);
+            var basePath = "/";
+            if (window.location.hostname.endsWith(".github.io") && segments.length > 0) {
+                basePath = "/" + segments[0] + "/";
+            }
+
             var requestedPath = window.location.pathname + window.location.search + window.location.hash;
             sessionStorage.setItem("gh-pages-redirect", requestedPath);
-            window.location.replace("/khutsuri/");
+            window.location.replace(basePath);
         })();
     </script>
 </head>
