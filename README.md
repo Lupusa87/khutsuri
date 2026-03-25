@@ -1,2 +1,0 @@
-# khutsuri
-khutsuri

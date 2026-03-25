@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="ასომთავრული, ნუსხური, მხედრული, ხუცური, ანბანი, ენა, დამწერლობა, asomtavruli, nuskhuri, mkhedruli, khutsuri, anbani, ena, damwerloba, damtserloba">
+    <meta name="description" content="ასომთავრული ნუსხური მხედრული ხუცური ანბანის ენის დამწერლობის სასწავლი აპლიკაცია პროგრამა ტრენაჟორი">
+    <meta name="author" content="Vakhtangi Abashidze ვახტანგი აბაშიძე ვახტანგ აბაშიძე ვახო აბაშიძე">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>ხუცური</title>
+    <base href="/khutsuri/" />
+    <script>
+        (function () {
+            var redirectPath = sessionStorage.getItem("gh-pages-redirect");
+            if (!redirectPath) {
+                return;
+            }
+
+            sessionStorage.removeItem("gh-pages-redirect");
+            window.history.replaceState(null, "", redirectPath);
+        })();
+    </script>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="BlazorOldGeorgianScripts.styles.css" rel="stylesheet">
+    <link href="manifest.json" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+</head>
+
+<body style="font-size:1.5vh;background-color:#f2f2f2">
+    <app>
+        <div style="margin:3vh;color:darkblue;font-size:2vh">გთხოვთ დაელოდოთ, მიმდინარეობს ჩატვირთვა...</div>
+    </app>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="CheckMobile.js"></script>
+    <script>checkifmobile();</script>
+    <script src="CheckVersion.js?ver=1.0.8"></script>
+    <script>checkversion();</script>
+    <script src="JsInterop.js"></script>
+    <script src="_content/BlazorWindowHelper/BWHJsInterop.js"></script>
+    <script src="_content/BlazorSoundsLib/BSoundsLJsInterop.js"></script>
+    <script src="_content/BlazorCanvasHelper/BCHJsInterop.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script src="_framework/blazor.webassembly.js"></script>
+
+</body>
+
+</html>
