@@ -40,7 +40,7 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'G-J6M6NKZYQJ');
+        gtag('config', 'G-J6M6NKZYQJ', { send_page_view: false });
 
         window.khAnalyticsTrackPageView = function (url) {
             if (typeof window.gtag !== "function") {
@@ -50,7 +50,7 @@
             var parsedUrl = new URL(url, window.location.origin);
             window.gtag('event', 'page_view', {
                 page_location: parsedUrl.href,
-                page_path: parsedUrl.pathname + parsedUrl.search,
+                page_path: parsedUrl.pathname,
                 page_title: document.title
             });
         };

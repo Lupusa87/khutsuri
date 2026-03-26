@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "lBMxHFOe",
+  "version": "LHQKqX1h",
   "assets": [
     {
       "hash": "sha256-AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=",
@@ -722,7 +722,7 @@ self.assetsManifest = {
       "url": "icons/youtube.png"
     },
     {
-      "hash": "sha256-b/BefuZMN3IKiw8YHbZJIC6KnM8Ua7IS/vIfPmhe7+k=",
+      "hash": "sha256-lfZLFtstaO1ErC8r0XE8Mcjbz7HATmfos1X1IKZW/rI=",
       "url": "index.html"
     },
     {
