@@ -8,9 +8,16 @@
     <meta name="author" content="Vakhtangi Abashidze ვახტანგი აბაშიძე ვახტანგ აბაშიძე ვახო აბაშიძე">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>ხუცური</title>
-    <base href="/khutsuri/" />
+    <base href="/" />
     <script>
         (function () {
+            var baseElement = document.querySelector("base");
+            if (window.location.hostname.endsWith(".github.io")) {
+                var segments = window.location.pathname.split("/").filter(Boolean);
+                var basePath = segments.length > 0 ? "/" + segments[0] + "/" : "/";
+                baseElement.setAttribute("href", basePath);
+            }
+
             var redirectPath = sessionStorage.getItem("gh-pages-redirect");
             if (!redirectPath) {
                 return;
@@ -26,6 +33,28 @@
     <link href="manifest.json" rel="manifest" />
     <link rel="icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6M6NKZYQJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-J6M6NKZYQJ');
+
+        window.khAnalyticsTrackPageView = function (url) {
+            if (typeof window.gtag !== "function") {
+                return;
+            }
+
+            var parsedUrl = new URL(url, window.location.origin);
+            window.gtag('event', 'page_view', {
+                page_location: parsedUrl.href,
+                page_path: parsedUrl.pathname + parsedUrl.search,
+                page_title: document.title
+            });
+        };
+    </script>
 </head>
 
 <body style="font-size:1.5vh;background-color:#f2f2f2">
