@@ -9,6 +9,25 @@
     background-color: lightyellow;
 }
 
+.letter[b-bcg9gytq7s] {
+    border-radius: 1.2vh;
+    transition: background-color 140ms ease, box-shadow 140ms ease;
+}
+
+.letter-selected[b-bcg9gytq7s] {
+    background-color: #e8f7eb;
+    box-shadow: inset 0 0 0 1px #5f9d69;
+    border-left: 1px solid #5f9d69;
+    border-right: 1px solid #5f9d69;
+}
+
+.letter-related[b-bcg9gytq7s] {
+    background-color: #ffebeb;
+    box-shadow: inset 0 0 0 1px #c26767;
+    border-left: 1px solid #c26767;
+    border-right: 1px solid #c26767;
+}
+
 
 .ctnsort[b-bcg9gytq7s] {
     display: grid;
@@ -20,6 +39,24 @@
 
 .mrg[b-bcg9gytq7s] {
     margin-bottom: 1vh;
+}
+
+.circledi[b-bcg9gytq7s] {
+    background-color: rgba(250, 232, 140, 0.92);
+    border-radius: 50%;
+    user-select: none;
+}
+
+.circleds[b-bcg9gytq7s] {
+    background-color: rgba(152, 226, 168, 0.85);
+    border-radius: 50%;
+    user-select: none;
+}
+
+.circledib[b-bcg9gytq7s] {
+    background-color: rgba(242, 164, 164, 0.85);
+    border-radius: 50%;
+    user-select: none;
 }
 
 .circledl[b-bcg9gytq7s] {
@@ -41,33 +78,342 @@
     outline: 1px solid red;
     user-select: none;
 }
+
+.current-letter-selected[b-bcg9gytq7s] {
+    box-shadow: inset 0 0 0 2px #184f9e, 0 0 0 1px rgba(233, 241, 255, 0.95);
+}
+
+.current-letter-related[b-bcg9gytq7s] {
+    box-shadow: none;
+}
 /* /Pages/PageDesktop.razor.rz.scp.css */
 /* /Pages/PageInfosAndSimilarities.razor.rz.scp.css */
-
 .MyCnt[b-ml8ubblc6s] {
     display: grid;
+    grid-template-rows: 59% 4% 37%;
+    gap: 0;
     position: relative;
     width: 100%;
     height: 100%;
-    grid-template-rows: 63% 5% 32%;
     overflow: hidden;
-    text-align: center;
-    align-self: center;
-    margin: 2vh;
-    margin-top: 0;
+    margin: 0;
+    padding: 1.2vh 2vh 1vh 2vh;
     font-size: 2vh;
 }
 
-
-.MyFlexCnt[b-ml8ubblc6s] {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    vertical-align: top;
-    justify-items: center;
-    width: 98%;
+.DetailsPanel[b-ml8ubblc6s] {
+    min-height: 0;
     overflow: auto;
+    padding: 0.2vh 1vh 0 1vh;
 }
 
+.LetterDetails[b-ml8ubblc6s] {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 1.1vh;
+    align-items: start;
+}
 
+.LetterHero[b-ml8ubblc6s] {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0;
+}
+
+.LetterGlyph[b-ml8ubblc6s] {
+    font-size: clamp(14vh, 18vh, 22vh);
+    line-height: 1;
+}
+
+.DetailsContent[b-ml8ubblc6s] {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1vh;
+    align-items: start;
+}
+
+.ClearIcon[b-ml8ubblc6s] {
+    width: 2.8vh;
+    height: 2.8vh;
+}
+
+.InfoCard[b-ml8ubblc6s] {
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(47, 84, 120, 0.14);
+    border-radius: 1.6vh;
+    padding: 1.3vh;
+    min-height: 0;
+    text-align: left;
+    box-shadow: 0 0.8vh 2vh rgba(15, 23, 42, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.InfoCardMuted[b-ml8ubblc6s] {
+    opacity: 0.45;
+}
+
+.SectionTitle[b-ml8ubblc6s] {
+    font-size: 1.95vh;
+    font-weight: 700;
+    color: darkblue;
+    margin-bottom: 0.7vh;
+    flex: 0 0 auto;
+}
+
+.InfoText[b-ml8ubblc6s],
+.SimilarityComment[b-ml8ubblc6s],
+.EmptyMessage[b-ml8ubblc6s],
+.EmptySubtle[b-ml8ubblc6s],
+.PromptText[b-ml8ubblc6s],
+.SelectionPrompt[b-ml8ubblc6s] {
+    color: #213547;
+    line-height: 1.5;
+}
+
+.InfoInlineLetter[b-ml8ubblc6s] {
+    display: inline-block;
+    margin: 0 0.24em;
+    font-size: 3em;
+    line-height: 1;
+    vertical-align: -0.12em;
+}
+
+.CardItems[b-ml8ubblc6s] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+    min-height: 0;
+    overflow: auto;
+    padding-right: 0.25vh;
+}
+
+.InfoItem[b-ml8ubblc6s],
+.SimilarityItem[b-ml8ubblc6s] {
+    flex: 0 0 auto;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(47, 84, 120, 0.09);
+    border-radius: 1.2vh;
+    padding: 0.9vh 1vh;
+}
+
+.SimilarityItemSeen[b-ml8ubblc6s] {
+    background: rgba(245, 246, 248, 0.72);
+    border-color: rgba(125, 138, 154, 0.35);
+    opacity: 0.72;
+}
+
+.SeenBadge[b-ml8ubblc6s] {
+    display: inline-block;
+    margin-bottom: 0.7vh;
+    padding: 0.18em 0.6em;
+    border-radius: 999px;
+    background: rgba(125, 138, 154, 0.16);
+    border: 1px solid rgba(125, 138, 154, 0.28);
+    color: #5a6878;
+    font-size: 0.82em;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.InfoImage[b-ml8ubblc6s] {
+    display: block;
+    max-width: min(100%, 34vh);
+    max-height: 19vh;
+    margin-bottom: 0.8vh;
+    border-radius: 1vh;
+    border: 1px solid rgba(47, 84, 120, 0.12);
+    background: white;
+}
+
+.SimilarityLetters[b-ml8ubblc6s] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8vh;
+    margin-bottom: 0.45vh;
+}
+
+.SimilarityLetter[b-ml8ubblc6s] {
+    font-size: 4.2vh;
+    line-height: 1;
+}
+
+.EmptyMessage[b-ml8ubblc6s] {
+    color: #51667a;
+}
+
+.EmptySubtle[b-ml8ubblc6s] {
+    color: #71859b;
+    font-size: 0.95em;
+}
+
+.SelectionPrompt[b-ml8ubblc6s] {
+    max-width: 72vh;
+    margin: 5vh auto 0 auto;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px dashed rgba(47, 84, 120, 0.2);
+    border-radius: 1.6vh;
+    padding: 2.4vh 2.8vh;
+    text-align: center;
+}
+
+.PromptTitle[b-ml8ubblc6s] {
+    font-size: 2.2vh;
+    font-weight: 700;
+    color: darkblue;
+    margin-bottom: 1vh;
+}
+
+.PromptNotice[b-ml8ubblc6s] {
+    margin: 1.4vh auto 0 auto;
+    max-width: 58vh;
+    padding: 1vh 1.2vh;
+    border-radius: 1.1vh;
+    background: rgba(255, 239, 205, 0.78);
+    border: 1px solid rgba(191, 144, 0, 0.22);
+    color: #7a5600;
+    text-align: left;
+    line-height: 1.45;
+    font-size: 0.9em;
+}
+
+.PromptStats[b-ml8ubblc6s] {
+    display: flex;
+    justify-content: center;
+    gap: 1.2vh;
+    flex-wrap: wrap;
+    margin-top: 1.2vh;
+}
+
+.PromptStat[b-ml8ubblc6s] {
+    display: flex;
+    align-items: baseline;
+    gap: 0.55vh;
+    padding: 0.65vh 0.95vh;
+    border-radius: 999px;
+    background: rgba(47, 84, 120, 0.08);
+    border: 1px solid rgba(47, 84, 120, 0.12);
+    color: #35516f;
+    font-size: 0.9em;
+}
+
+.PromptStatValue[b-ml8ubblc6s] {
+    font-size: 1.08em;
+    font-weight: 700;
+    color: darkblue;
+}
+
+.PromptStatLabel[b-ml8ubblc6s] {
+    font-size: 0.9em;
+}
+
+.Legend[b-ml8ubblc6s] {
+    display: grid;
+    gap: 0.9vh;
+    margin-top: 2vh;
+    text-align: left;
+    justify-content: center;
+}
+
+.LegendItem[b-ml8ubblc6s] {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+
+.LegendDot[b-ml8ubblc6s] {
+    width: 1.8vh;
+    height: 1.8vh;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    flex: 0 0 auto;
+}
+
+.LegendInfo[b-ml8ubblc6s] {
+    background: rgba(250, 232, 140, 0.92);
+}
+
+.LegendSimilarity[b-ml8ubblc6s] {
+    background: rgba(152, 226, 168, 0.85);
+}
+
+.LegendBoth[b-ml8ubblc6s] {
+    background: rgba(242, 164, 164, 0.85);
+}
+
+.AlphabetPanel[b-ml8ubblc6s] {
+    min-height: 0;
+    margin-top: -1.2vh;
+}
+
+.KeyboardHelp[b-ml8ubblc6s] {
+    width: fit-content;
+    max-width: calc(100% - 10vw);
+    margin: 0.9vh auto 0 auto;
+    padding: 0.5vh 0.8vh;
+    border-radius: 1vh;
+    background: rgba(47, 84, 120, 0.06);
+    border: 1px solid rgba(47, 84, 120, 0.1);
+    color: #35516f;
+    font-size: 0.82em;
+}
+
+.KeyboardHelpTitle[b-ml8ubblc6s] {
+    font-weight: 700;
+    color: darkblue;
+    margin-bottom: 0.2vh;
+}
+
+.KeyboardControls[b-ml8ubblc6s] {
+    display: flex;
+    justify-content: center;
+    gap: 0.55vh;
+    margin-bottom: 0.45vh;
+}
+
+.NavButton[b-ml8ubblc6s] {
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    border: 1px solid rgba(47, 84, 120, 0.18);
+    border-radius: 0.7em;
+    background: rgba(255, 255, 255, 0.82);
+    color: #1f3956;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.NavButton:hover[b-ml8ubblc6s] {
+    background: rgba(232, 241, 252, 0.95);
+}
+
+.NavButtonActive[b-ml8ubblc6s] {
+    background: rgba(214, 229, 252, 0.98);
+    border-color: rgba(24, 79, 158, 0.42);
+    box-shadow: inset 0 0 0 1px rgba(24, 79, 158, 0.2);
+    color: #184f9e;
+}
+
+.MiddleRow[b-ml8ubblc6s] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 0;
+}
+
+@media (max-width: 900px) {
+    .DetailsContent[b-ml8ubblc6s] {
+        grid-template-columns: 1fr;
+    }
+
+    .LetterHero[b-ml8ubblc6s] {
+        justify-content: center;
+    }
+
+    .LetterGlyph[b-ml8ubblc6s] {
+        font-size: clamp(14vh, 18vh, 22vh);
+    }
+}

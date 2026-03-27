@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lupusa87.github.io/khutsuri/sitemap.xml
